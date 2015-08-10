@@ -13,7 +13,8 @@ numeric
    max_iter     50000
    final_time   4.0
    min_residue  1.0e-20
-   reconstruct  bj
+   reconstruct  first
+   ang_mom      no
    smooth_res   no
    ducros       no
 }
@@ -29,7 +30,7 @@ material
    }
    prandtl     1.0
    model       euler
-   flux        kfvs
+   flux        kepes_roe
 }
 
 constants
